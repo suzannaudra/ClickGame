@@ -1,4 +1,4 @@
-// import React from 'react';
+
 import './App.css';
 import React, { Component } from "react"
 import Card from "./components/Card"
@@ -16,6 +16,7 @@ import "./App.css"
         highscore: 0
       };
     
+      // If the user clicks on the same card it alerts that the Game is over. If the current score is more than than the high score it becomes the new highscore and the game is over. 
       gameOver = () => {
         if (this.state.score > this.state.highscore) {
           this.setState({highscore: this.state.score}, function() {
@@ -29,7 +30,7 @@ import "./App.css"
         this.setState({score: 0});
         return true;
       }
-    
+    //This function counts the score. It finds the card by id and if the id has not been previously clicked it increments the score by 1. Keep doing this until the game is over. 
       clickCount = id => {
         this.state.cards.find((o, i) => {
           if (o.id === id) {
@@ -46,7 +47,7 @@ import "./App.css"
           }
         });
       }
-      // Map over this.state.cards and render a cardCard component for each card object
+      // Map over this.state.cards and render a cardCard component for each card object. This gives each card and id, image, and clickcount. 
       render() {
         return (
           <Wrapper>

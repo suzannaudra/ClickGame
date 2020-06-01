@@ -2,8 +2,9 @@
 .header {
   width: 100%;
   font-size: 2rem;
-  color: rgb(174, 172, 42);
+  color: rgb(174, 172, 52);
   margin-bottom: 15px;
+  font-weight: bold;
 }
 
 .title {

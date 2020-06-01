@@ -1,6 +1,7 @@
 import React from "react";
 import "./Card.css";
 
+//Runs the clickCount function each time a card is clicked
 const Card = props => (
   <div className="card" onClick={() => props.clickCount(props.id)}>
     <div className="img-container">
