@@ -47,11 +47,11 @@ import "./App.css"
           }
         });
       }
-      // Map over this.state.cards and render a cardCard component for each card object. This gives each card and id, image, and clickcount. 
+      //This stores the header information. It maps over this.state.cards and render a cardCard component for each card object. This gives each card and id, image, and clickcount. 
       render() {
         return (
           <Wrapper>
-            <Header score={this.state.score} highscore={this.state.highscore}>Clicky Game</Header>
+            <Header score={this.state.score} highscore={this.state.highscore}>Nature's Click Game</Header>
             {this.state.cards.map(card => (
               <Card
                 clickCount={this.clickCount}
