@@ -1,4 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a click game where you try not to click the same image twice or the game is over.  The application keeps track of the user's score. The user's score increments by one when clicking an image for the first time. The user's score is reset to 0 if they click the same image more than once.  Every time an image is clicked, the images rendered to the page shuffle themselves in a random order.
+
+Once the user's score is reset after an incorrect guess, the game should restart.
+The game uses react app for development. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
