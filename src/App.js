@@ -23,22 +23,25 @@ import "./App.css"
             console.log(this.state.highscore);
           });
         }
+        //Returns each card count to 0 when the game is over.
         this.state.cards.forEach(card => {
           card.count = 0;
         });
-        alert(`Game Over :( \nscore: ${this.state.score}`);
+        //Alerts game over and resets the score to zero
+        alert(`Game Over score: ${this.state.score}`);
         this.setState({score: 0});
         return true;
       }
     //This function counts the score. It finds the card by id and if the id has not been previously clicked it increments the score by 1. Keep doing this until the game is over. 
       clickCount = id => {
-        this.state.cards.find((o, i) => {
-          if (o.id === id) {
+        this.state.cards.find((x, i) => {
+          if (x.id === id) {
             if(cards[i].count === 0){
               cards[i].count = cards[i].count + 1;
               this.setState({score : this.state.score + 1}, function(){
                 console.log(this.state.score);
               });
+              //sorts cards in Random order until game over
               this.state.cards.sort(() => Math.random() - 0.5)
               return true; 
             } else {
