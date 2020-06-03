@@ -1,4 +1,4 @@
-
+//Defines routes to import the files to use to run the app.
 import './App.css';
 import React, { Component } from "react"
 import Card from "./components/Card"
