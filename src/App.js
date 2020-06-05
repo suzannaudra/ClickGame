@@ -41,7 +41,7 @@ import "./App.css"
               this.setState({score : this.state.score + 1}, function(){
                 console.log(this.state.score);
               });
-              sorts cards in Random order until game over
+              //sorts cards in Random order until game over
               this.state.cards.sort(() => Math.random() - 0.5)
               return true; 
             } else {
