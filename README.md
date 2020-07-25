@@ -2,6 +2,9 @@ This is a click game where you try not to click the same image twice or the game
 
 The game uses react app for development. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+The deployed game can be found here: https://suzannaudra.github.io/ClickGame/
+
+
 ## Available Scripts
 
 In the project directory, you can run:
