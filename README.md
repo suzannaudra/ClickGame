@@ -4,8 +4,9 @@ The game uses react app for development. This project was bootstrapped with [Cre
 
 The deployed game can be found here: https://suzannaudra.github.io/ClickGame/
 
+![Click](Click.png) 
 
-## Available Scripts
+Available Scripts
 
 In the project directory, you can run:
 
